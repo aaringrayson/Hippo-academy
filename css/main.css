@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Global styles */
+a {
+    text-decoration: none;
+    transition: opacity 300ms ease-in-out;
+}
+
+a:hover {
+    opacity: 70%;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 1rem;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section, footer {
+    padding: 5rem 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.btn {
+    padding: .75rem 2.5rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-main {
+    background: #fff;
+    color: #000;
+}
+
+.btn-outline {
+    border: 1px solid #000;
+    color: #000;
+}
+
+.btn-dark {
+    background: #000;
+    color: #fff;
+}
+
+/* Typography */
+h1, h2, h3, h6 {
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Navbar & hero section*/
+main {
+    /* height: 80vh; */
+    width: 100%;
+    background-image: url('../imgs/bg-img.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+nav {
+    padding: 2rem 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+main a, nav i {
+    color: #fff;
+}
+
+.hero-section p {
+    margin: 1rem auto 3rem auto;
+}
+
+.watch-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Classes section */
+.classes-section {
+    background: #f3f3f3;
+}
+
+.classes-section .flex {
+    gap: 2rem;
+}
+
+.card {
+    flex: 1;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card h3 {
+    margin: 1rem 0 .5rem 0;
+}
+
+/* Volunteer section */
+.volunteer-section p {
+    margin-bottom: 2rem;
+}
+
+/* Footer  */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: left;
+}
+
+footer p, footer a {
+    text-align: left;
+    font-size: .75rem;
+}
+
+footer .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer a {
+    color: #fff;
+}
+
+footer i {
+    cursor: pointer;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 566px) {
+    nav ul {
+        display: none;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    footer .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+}
+@media (max-width: 740px) {
+    nav {
+        padding-bottom: 0;
+    }
+    .classes-section .flex {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
